@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  background: #000;
+}
+
+.carrousel {
+  width: 800px;     /* taille FIXE, comme tu le veux */
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carrousel img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* ne modifie PAS la taille des images */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carrousel img.active {
+  opacity: 1;
+}
